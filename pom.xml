@@ -11,9 +11,16 @@
 	<groupId>com.williams</groupId>
 	<artifactId>sample-algorithms-structures</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>sample-algorithms-structures</name>
 	<description>Algorithms and data structures using Spring Boot</description>
+	<modules>
+		<module>algorithms</module>
+		<module>data-structures</module>
+	</modules>
 	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
