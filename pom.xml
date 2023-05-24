@@ -9,14 +9,15 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.williams</groupId>
-	<artifactId>sample-algorithms-structures</artifactId>
+	<artifactId>sample-orders-distribution</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>sample-algorithms-structures</name>
+	<name>sample-orders-distribution</name>
 	<description>Algorithms and data structures using Spring Boot</description>
 	<modules>
 		<module>algorithms</module>
 		<module>data-structures</module>
+		<module>orders</module>
 	</modules>
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
@@ -59,6 +60,24 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!--<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/main</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>-->
 		</plugins>
 	</build>
 
